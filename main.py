@@ -10,7 +10,7 @@ pygame.mixer.init()
 
 WIDTH, HEIGHT = 1000, 700
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("AI Hand Flappy Bird")
+pygame.display.set_caption("Gesture Controlled Flappy Bird")
 
 clock = pygame.time.Clock()
 
@@ -259,7 +259,7 @@ while running:
             reset_game()
 
     pygame.display.update()
-    clock.tick(30)
+    clock.tick(100)
 
 cap.release()
 cv2.destroyAllWindows()
